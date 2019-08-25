@@ -1,11 +1,13 @@
+from pathlib import Path
+
 import bsmu.vision.app.main as parent_app
 
 
-def run_app(childs=()):
+def run_app(child_config_paths: tuple = ()):
     print('Run, Bone Age! Run!')
 
-    parent_app.run_app(childs + (__file__,))
-    # bsmu.vision.app.main.run_app((*childs, __file__))
+    config_path = (Path(__file__).parent / 'configs').resolve()
+    parent_app.run_app(child_config_paths + (config_path,))
 
 
 if __name__ == '__main__':
