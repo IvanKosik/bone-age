@@ -1,0 +1,5 @@
+plugins:
+  - bsmu.vision.plugins.file_dropper.FileDropperPlugin
+  - bsmu.vision.plugins.loaders.image.simple.SimpleImageFileLoaderPlugin
+  - bsmu.vision.plugins.visualizers.image.flat.FlatImageVisualizerPlugin
+  - bsmu.vision.plugins.storages.data.DataStoragePlugin
