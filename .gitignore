@@ -1,3 +1,6 @@
+# Neural network models save separately
+*.h5
+
 /ToDo.txt
 
 .idea
